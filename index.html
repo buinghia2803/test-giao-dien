@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .image-container {
+      position: relative;
+    }
+
+    .hexagon-image {
+      position: absolute;
+    }
+
+    .half-image{
+      object-fit: cover;
+      object-position: left;
+    }
+
+    .hexagon-image:nth-child(1) {
+      transform: translateX(238%) translateY(60%);
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+      background-image: url('./photo_1.jpg');
+      
+      width: 300px;
+      height: 300px;
+    }
+
+    .hexagon-image:nth-child(2) {
+      transform: translateX(346%) translateY(0%);
+      clip-path: polygon(50% 0%, 100% 0%, 100% 75%, 50% 89%, 0% 75%, 0% 0%);
+      background-image: url('./photo_2.jpg');
+      
+      width: 300px;
+      height: 540px;
+    }
+
+    .hexagon-image:nth-child(3) {
+      transform: translateX(292%) translateY(135%);
+      clip-path: polygon(50% 0%, 100% 24%, 100% 100%, 50% 100%, 0% 100%, 0% 24%);
+      background-image: url('./photo_3.jpg');
+      
+      width: 300px;
+      height: 312px;
+    }
+
+    .hexagon-image:nth-child(4) {
+      transform: translateX(400%) translateY(140%);
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+      background-image: url('./photo_4.jpg');
+      
+      width: 300px;
+      height: 300px;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="image-container">
+  <img src="photo_1.jpg" alt="Image 1" class="hexagon-image half-image">
+  <img src="photo_2.jpg" alt="Image 2" class="hexagon-image half-image">
+  <img src="photo_3.jpg" alt="Image 3" class="hexagon-image half-image">
+  <img src="photo_4.jpg" alt="Image 4" class="hexagon-image half-image">
+</div>
+
+</body>
+</html>
